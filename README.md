@@ -48,5 +48,10 @@ If using `.testcaferc.json` for the testCafe reporter configuration, don't add t
 }
 ```
 
+## Cloning or Publishing Updates
+1. Make desired modifications
+2. run `gulp build` to update /lib/index
+3. run `npm run publish` (make sure you're pointing to LM NPM)
+
 ## Author
 James Martineau (http://jamesmart77.github.io)
