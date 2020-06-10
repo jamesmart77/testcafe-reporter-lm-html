@@ -2,11 +2,14 @@
   "name": "testcafe-reporter-lm-html",
   "version": "1.0.0",
   "description": "lm TestCafe HTML reporter plugin.",
-  "repository": "https://github.com/jamesmart77/testcafe-reporter-lm",
   "author": {
     "name": "James Martineau",
     "email": "jamesmart77@gmail.com",
     "url": "http://jamesmart77.github.io"
+  },
+  "repository": {
+    "url": "https://github.com/jamesmart77/testcafe-reporter-lm-html.git",
+    "type": "git"
   },
   "main": "lib/index",
   "files": [
