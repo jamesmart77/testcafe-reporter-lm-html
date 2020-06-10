@@ -4,7 +4,7 @@
 This is the **lm** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 <p align="center">
-    <img src="https://raw.github.com/jamesmart77/testcafe-reporter-lm/master/media/preview.png" alt="preview" />
+    <img src="https://raw.github.com/jamesmart77/testcafe-reporter-lm-html/master/media/preview.png" alt="preview" />
 </p>
 
 ## Install
@@ -29,7 +29,7 @@ testCafe
     .createRunner()
     .src('path/to/test/file.js')
     .browsers('chrome')
-    .reporter('lm') // <-
+    .reporter('lm-html') // <-
     .run();
 ```
 
