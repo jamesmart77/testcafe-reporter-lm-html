@@ -52,7 +52,7 @@ module.exports = () => ({
         }
         this.report += '</h4>\n';
         testRunInfo.errs.forEach((error) => {
-            this.report += this.indentString('<pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">');
+            this.report += this.indentString('<pre style="padding:15px;box-shadow: 3px 3px 3px 3px #00000033;">');
             this.report += this.escapeHtml(this.formatError(error, '')).replace('{', '&#123').replace('}', '&#125');
             this.report += this.indentString('</pre><br>');
         });
@@ -137,6 +137,27 @@ module.exports = () => ({
         border-color: #f1f1f1;
         border-style: solid;
       }
+      .header {
+        color: #1a1446 !important;
+        font-weight: 300;
+        }
+
+        .navbar-default, .navbar-collapse {
+            background-color: #ffd000;
+            background-image: none;
+            border-color: #ffd000 !important;
+            border-radius: 0 !important;
+        }
+
+        .nav>li>a {
+            color: #1a1446 !important;
+        }
+
+        .navbar-brand {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #1a1446 !important;
+        }
       .modal {
         display: none;
         position: fixed;
@@ -183,7 +204,7 @@ module.exports = () => ({
           <div class="container-fluid">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">
-                Home
+                TestCafe Test Summary
               </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -194,10 +215,10 @@ module.exports = () => ({
           </div>
       </nav>
       <div class="container">
-          <h1 class="text-primary">TestCafe Test Summary</h1>
+          <h1 class="header">TestCafe Test Report</h1>
           <div class="client-logo" style="padding:15px"></div>
-          <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
-            <h3>Summary</h3><br>
+          <div class="jumbotro" style="padding:15px;box-shadow: 1px 1px 1px 1px #00000033;">
+            <h3 class="header">Summary</h3><br>
             <p class="lead">Start Time: ${this.startTime}</p>
             <p class="lead">Browsers: ${this.uaList}</p>
             <p class="lead">Duration: ${durationStr}</p>
@@ -207,7 +228,7 @@ module.exports = () => ({
 
         // Summary table
         html += `
-      <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+      <table class="table sortable" style="padding:15px;box-shadow: 3px 3px 3px 3px #00000033;">
         <thead>
           <tr>
             <th>#</th>

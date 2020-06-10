@@ -10,7 +10,7 @@ This is the **lm** reporter plugin for [TestCafe](http://devexpress.github.io/te
 ## Install
 
 ```
-npm install testcafe-reporter-lm
+npm install testcafe-reporter-lm-html
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install testcafe-reporter-lm
 When you run tests from the command line, specify the reporter name by using the `--reporter` option:
 
 ```
-testcafe chrome 'path/to/test/file.js' --reporter lm
+testcafe chrome 'path/to/test/file.js' --reporter lm-html
 ```
 
 
@@ -31,6 +31,21 @@ testCafe
     .browsers('chrome')
     .reporter('lm') // <-
     .run();
+```
+
+If using `.testcaferc.json` for the testCafe reporter configuration, don't add the `reporter()` method as above, simply add the following to your config file...
+```json
+{
+  "reporter": [
+    {
+      "name": "spec"
+    },
+    {
+      "name": "lm-html",
+      "output": "public/reports.html"
+    },
+  ],
+}
 ```
 
 ## Author

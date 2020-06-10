@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-lm-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "lm TestCafe HTML reporter plugin.",
   "author": {
     "name": "James Martineau",
@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "test": "true",
-    "preppy": "publish-please guard",
+    "publish": "npm publish",
     "lint": "eslint --fix ."
   },
   "keywords": [
@@ -39,7 +39,6 @@
     "gulp-eslint": "^5.0.0",
     "gulp-mocha": "^6.0.0",
     "normalize-newline": "^1.0.2",
-    "publish-please": "^5.4.3",
     "read-file-relative": "^1.2.0",
     "testcafe": "^1.0.1"
   },
