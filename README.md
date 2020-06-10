@@ -1,7 +1,7 @@
-# testcafe-reporter-lm
-[![Build Status](https://travis-ci.org/jamesmart77/testcafe-reporter-lm.svg)](https://travis-ci.org/jamesmart77/testcafe-reporter-lm)
+# testcafe-reporter-lm-html
+[![Build Status](https://travis-ci.org/jamesmart77/testcafe-reporter-lm-html.svg)](https://travis-ci.org/jamesmart77/testcafe-reporter-lm-html)
 
-This is the **lm** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
+This is the **lm-html** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 <p align="center">
     <img src="https://raw.github.com/jamesmart77/testcafe-reporter-lm-html/master/media/preview.png" alt="preview" />
