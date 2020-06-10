@@ -158,6 +158,9 @@ module.exports = () => ({
             font-weight: 300;
             color: #1a1446 !important;
         }
+        .jumbotron {
+            background-color: #f5f5f5;
+        }
       .modal {
         display: none;
         position: fixed;
@@ -217,7 +220,7 @@ module.exports = () => ({
       <div class="container">
           <h1 class="header">TestCafe Test Report</h1>
           <div class="client-logo" style="padding:15px"></div>
-          <div class="jumbotro" style="padding:15px;box-shadow: 1px 1px 1px 1px #00000033;">
+          <div class="jumbotro" style="padding:15px;box-shadow: 3px 3px 3px 3px #00000033;">
             <h3 class="header">Summary</h3><br>
             <p class="lead">Start Time: ${this.startTime}</p>
             <p class="lead">Browsers: ${this.uaList}</p>
