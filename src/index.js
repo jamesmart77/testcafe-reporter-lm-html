@@ -175,7 +175,6 @@ module.exports = () => ({
       <span class="closeModal">&times;</span>
       <img class="modal-content" id="modelImage">
     </div>
-    <div class="container">
 `;
 
         // Now add a summary
@@ -194,16 +193,17 @@ module.exports = () => ({
             </div><!-- /.navbar-collapse -->
           </div>
       </nav>
-      <h1 class="text-primary">TestCafe Test Summary</h1>
-      <div class="client-logo" style="padding:15px"></div>
-      <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
-        <h3>Summary</h3><br>
-        <p class="lead">Start Time: ${this.startTime}</p>
-        <p class="lead">Browsers: ${this.uaList}</p>
-        <p class="lead">Duration: ${durationStr}</p>
-        <p class="lead">Tests Failed: ${failed} out of ${this.testCount}</p>
-        <p class="lead">Tests Skipped: ${this.skipped}</p>
-      </div><br>`;
+      <div class="container">
+          <h1 class="text-primary">TestCafe Test Summary</h1>
+          <div class="client-logo" style="padding:15px"></div>
+          <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+            <h3>Summary</h3><br>
+            <p class="lead">Start Time: ${this.startTime}</p>
+            <p class="lead">Browsers: ${this.uaList}</p>
+            <p class="lead">Duration: ${durationStr}</p>
+            <p class="lead">Tests Failed: ${failed} out of ${this.testCount}</p>
+            <p class="lead">Tests Skipped: ${this.skipped}</p>
+          </div><br>`;
 
         // Summary table
         html += `

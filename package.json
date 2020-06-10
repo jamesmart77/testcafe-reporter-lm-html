@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-lm-html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lm TestCafe HTML reporter plugin.",
   "author": {
     "name": "James Martineau",
@@ -17,7 +17,6 @@
   ],
   "scripts": {
     "test": "true",
-    "publish-please": "publish-please",
     "preppy": "publish-please guard",
     "lint": "eslint --fix ."
   },
