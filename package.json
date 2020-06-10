@@ -16,7 +16,6 @@
     "lib"
   ],
   "scripts": {
-    "test": "true",
     "publish": "npm publish",
     "lint": "eslint --fix ."
   },
